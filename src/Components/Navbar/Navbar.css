@@ -1,0 +1,12 @@
+#navbar {
+  height: 10vh;
+  border-top: 4px solid #00120B;
+}
+#navbar > nav {
+  height: inherit;
+  font-weight: bold;
+}
+
+.active {
+  color: red;
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,11 @@
+#navbar {
+    height: 10vh;
+    border-top: 4px solid #00120B;
+    &>nav {
+        height: inherit;
+        font-weight: bold;
+    }
+}
+.active{
+    color: red;
+}
