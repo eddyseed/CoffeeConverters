@@ -1,9 +1,11 @@
 #navbar {
-    height: 10vh;
+    height: 20vh;
     border-top: 4px solid #00120B;
+    background-color: #0d1117;
     &>nav {
         height: inherit;
         font-weight: bold;
+        grid-template-columns: 2fr 3fr 1fr;
     }
 }
 .active{
