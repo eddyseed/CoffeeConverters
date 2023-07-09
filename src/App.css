@@ -1,15 +1,33 @@
 .m {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300&family=Satisfy&family=Ultra&family=Unbounded:wght@300&display=swap');
-*{
-  font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=IBM+Plex+Sans:wght@700&family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;500&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;500&family=Montserrat&family=Poppins:wght@600&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;
 }
-.satisfy-font{
-  font-family: 'Satisfy', cursive;
-}
-.audio-fs{
+.audio-fs {
   font-family: 'Audiowide', cursive;
+}
+.pop-fs{
+  font-family: 'Poppins', sans-serif;
+}
+.mos-fs{
+  font-family: 'Montserrat', sans-serif;
+}
+.btn-teal {
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 99px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+.btn-teal:hover {
+  background-color: #006666;
 }

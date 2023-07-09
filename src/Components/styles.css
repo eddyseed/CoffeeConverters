@@ -1,0 +1,21 @@
+#home {
+  background: linear-gradient(to bottom, #e6e6e6 0%, #f0f0f0 25%, #f8f8f8 50%, #ffffff 100%);
+}
+
+input {
+  padding: 4px 24px;
+  vertical-align: middle;
+  border-radius: 99px;
+  min-height: 42px;
+  background-color: #ffffff;
+  border: 1px solid rgba(36, 28, 21, 0.3);
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #007c89;
+  box-shadow: inset 0 0 0 1px #007c89;
+}/*# sourceMappingURL=styles.css.map */

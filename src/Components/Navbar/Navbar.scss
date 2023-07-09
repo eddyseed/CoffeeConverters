@@ -1,13 +1,103 @@
 #navbar {
     height: 20vh;
-    border-top: 4px solid #00120B;
-    background-color: #0d1117;
+    background-color: transparent;;
+
     &>nav {
         height: inherit;
         font-weight: bold;
-        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-columns: 3fr 4fr 1fr;
+
+        &>div:nth-child(2) {
+            &>a {
+                padding: 1rem 1.5rem;
+                transition: .2s ease;
+            }
+        }
+
+        &>div:last-child {
+            button.close {
+                display: none;
+            }
+
+            button.login,
+            button.signup {
+                display: inline-block;
+                margin: 0 1rem 0 0;
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+                transition: .2e ease;
+                &:hover {
+                    background-color: #2980b9;
+                }
+            }
+
+            button.signup {
+                background-color: #2ecc71;
+
+                &:hover {
+                    background-color: #27ae60;
+
+                }
+            }
+        }
     }
 }
-.active{
-    color: red;
+
+.active {
+    color: #008080 !important;
+}
+
+@media only screen and (max-width:768px) {
+    #navbar {
+        height: 100vh;
+
+        &>nav {
+            grid-template-columns: none;
+            grid-auto-flow: row;
+            &>div:first-child{
+                #nav-title{
+                    margin-left: 3rem;
+                }
+            }
+            &>div:nth-child(2) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin-left: 2rem;
+            }
+
+            &>div:last-child {
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                margin-left: 2rem;
+                button.close {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    // margin-left: 2rem;
+
+                    &:hover {
+                        background-color: darkred;
+
+                    }
+                }
+
+
+            }
+        }
+    }
 }
