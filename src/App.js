@@ -9,10 +9,12 @@ export default function App() {
     <div>
       <Preloader />
       <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' Component={Home}></Route>
-        </Routes>
+        <div className='bg'>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' Component={Home}></Route>
+          </Routes>
+        </div>
       </Router>
     </div>
   )

@@ -8,7 +8,7 @@ export default function Navbar() {
     useEffect(() => { }, [location]);
 
     return (
-        <div id='navbar' className='fixed w-full'>
+        <div id='navbar' className=''>
             <nav className='grid grid-flow-col m'>
                 <div className='flex items-center justify-center'>
                     <Link id='nav-title' className='audio-fs tracking-wider leading-9 text-3xl select-none cursor-pointer' to={'/'}><span className='text-[#008080] audio-fs'>COFFEE</span> CONVERTERS</Link>

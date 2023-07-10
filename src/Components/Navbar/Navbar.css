@@ -1,6 +1,5 @@
 #navbar {
   height: 20vh;
-  background-color: transparent;
 }
 #navbar > nav {
   height: inherit;
