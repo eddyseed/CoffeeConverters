@@ -1,7 +1,7 @@
-username=['krishnav','nandini','taylor']
+username=[]
 password=[]
 i=0
-while i<len(username):
+while True:
     username_prompt=str(input("enter your username: "))
     if username_prompt in username:
         print("user already exists")
@@ -11,20 +11,7 @@ while i<len(username):
         if len(password_prompt)>=4:
             print(username_prompt , password_prompt)
             break
-
-# def authentication():
-#     username_prompt=str(input("enter your username: "))
-#     for i in username :
-#         if i==username_prompt:
-#             print("user already exists")
-#         else:
-#              print(username_prompt)
-#              break 
-#     while True:
-#         print("password must contain atleast 4 characters and numbers")
-#         password_prompt=str(input("create your password: "))
-#         if len(password_prompt)>=4:
-#                 print(username_prompt , password_prompt)
-#                 break
-
-# authentication()
+username.append(username_prompt)
+password.append(password_prompt)
+print(username)
+print(password)
